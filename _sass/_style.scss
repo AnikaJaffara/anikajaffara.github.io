@@ -1,0 +1,248 @@
+///*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//IMPORTS
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+@import "normalize";
+@import "bourbon/bourbon";
+@import "neat/neat";
+@import "base";
+@import "layout";
+
+
+///*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//HEADER
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.Header {
+	background: $blue2;
+	background-size: cover;
+	background-repeat: no-repeat;
+	text-align: center;
+}
+
+
+.Triangle {
+	@include triangle (3em, $blue6, down);
+	&:hover {color: $blue6;} 
+}
+
+
+///*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//PORTFOLIO
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.More {
+	background-color: $blue2;
+	h1 {
+		@include pad(2em);
+		font-size: 4em;
+		color: $blue6;
+		text-align: center;
+	}
+	.Triangle {
+		text-align: center;
+	}
+}
+
+
+///*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//POSTS
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.BlogPosts {
+//	overflow: auto; //BLOG SCROLL
+//	max-height: 100vh;
+	@include outer-container();
+}
+
+.Posts {
+	@include span-columns(8);
+	@include shift(2);
+	font-size: 1.25em;
+}
+
+.PostContent {
+	h1{
+		font-size: 1.5em;
+		color: #57AD68;
+		text-decoration: none;
+		font-weight: 600;
+	}
+	a {
+		text-decoration: none;
+//		&:hover {color: blue;} 
+//		&:active {color: #458C53;} 
+		&:visited {color: #458C53;} 
+	}	
+	p {
+		line-height: 1.7em;
+		color: shade($grey1, 20%);
+	}
+}
+
+
+///*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//FOOTER
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.Footer {
+	background-color: $blue2;
+}
+
+.Contact {
+	margin-top: 1em;
+	h1 {
+		margin: -1em;
+		font-size: 3.25em;
+		color: white;
+	}
+	h2 {
+		margin: -1em;
+		font-size: 3em;
+		color: $blue6;
+	}
+}
+
+.SocialLinks {
+}
+	
+.Social {
+	@include span-columns(10);
+	@include shift(1);
+	vertical-align: middle;
+	text-align: center;
+	li {
+		display: inline-block;
+		list-style-type: none;
+	}
+		a {
+			@include pad(.5em);
+			font-size: 4em;
+			color: $blue6;
+			&:hover {color: $blue5;}
+			
+			@include media($notebook) {
+				@include pad(.4em);
+				font-size: 3.6em;
+			}
+			@include media($tablet) {
+				@include pad(.4em);
+				font-size: 3em;
+			}
+			@include media($phablet) {
+				@include pad(.32em);
+				font-size: 2em;
+			}
+			@include media($mobile) {
+				@include pad(.4em);
+				font-size: 2.8em;
+			}
+			}
+}
+
+@include media($mobile) {
+	li:nth-child(-n+2) {
+		display: none;
+	}
+}
+	
+@include media($mobile) {
+	li:nth-child(1) {
+		display: none;
+	}
+}
+
+
+///*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//MODAL
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+form
+form {
+  max-width: 300px;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background: #f4f7f8;
+  border-radius: 8px;
+}
+
+input[type="text"],
+input[type="message"],
+input[type="email"],
+textarea,
+select {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 1.25em;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: $grey2;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+}
+	
+.Button {
+	@include pad(.7em 3.5em);
+	color: white;
+	font-weight: 700;
+	font-size: 1.2rem;	
+	background-color: $green1;
+//	box-shadow: 0 8px 16px -8px rgba(0, 0, 0, .8);
+	border: none;
+	cursor: pointer;
+	border-radius: 4px;
+}
+
+.Foot {
+	@include pad(1.25	em);
+	margin-top: 5em;
+	color: white;
+	text-align: center;
+	p {
+		font-size: .75em;
+	}
+}
+
+
+///*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//CV
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.CVHeader {
+	background: $blue2;
+	height: 25%;
+	background-repeat: no-repeat;
+	text-align: center;
+}
+
+.RSec1,
+.RSec2, 
+.RSec3, 
+.RSec4 {
+	text-align: center;
+}
+
+.ResumeTop {
+	@include pad(1em 0 4em 0);
+}
+
+.ResumeBottom {
+	@include pad(1em 0 4em 0);
+}
+
+.CVButton {
+	@include pad(.7em 3.5em);
+	color: white;
+	font-weight: 700;
+	text-decoration: none;
+	font-size: 1.2rem;	
+	background-color: $green1;
+//	box-shadow: 0 8px 16px -8px rgba(0, 0, 0, .8);
+	border: none;
+	cursor: pointer;
+	border-radius: 4px;
+}
+
+.PButton {
+	margin-top: 2em;
+}
+
+
+

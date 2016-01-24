@@ -1,0 +1,46 @@
+///*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//VARIABLES
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+//Colors
+
+$blue1: #2196F3;
+$blue2: #73B7F2;
+$blue3: #1976D2;
+$blue4: #73B7F2;
+$blue5: #007DFF;
+$blue6: #006BD9;
+
+$green1: #23B17E;
+$green2: #14A36F;
+	
+$yellow1: #FFB300;
+$yellow1: #E3A100;
+	
+$red1: #F35460;
+$red2: #E53C49;
+
+$grey1: #757575;
+$grey2: #BDBDBD;
+$grey3: #212121;
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+BREAKPOINTS
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+$mobile: new-breakpoint(max-width 460px 4);
+$phablet: new-breakpoint(max-width 700px 6);
+$tablet: new-breakpoint(max-width 860px 8);
+$notebook: new-breakpoint(max-width 1010px 10);
+
+
+///*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//IMPORTS
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+//@import "_partials/header";
+//@import "_partials/posts";	
+//@import "_partials/bullets";
+//@import "_partials/heightcontainer";
+//@import "_partials/gallery";
+@import "_partials/footer";
+@import "_partials/modal";
