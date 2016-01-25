@@ -37,10 +37,11 @@ $notebook: new-breakpoint(max-width 1010px 10);
 ///*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //IMPORTS
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-//@import "_partials/header";
+@import "_partials/header";
 //@import "_partials/posts";	
 //@import "_partials/bullets";
 //@import "_partials/heightcontainer";
 //@import "_partials/gallery";
+//@import "_partials/hovertile";
 @import "_partials/footer";
 @import "_partials/modal";

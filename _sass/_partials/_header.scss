@@ -11,7 +11,6 @@
   $gradient-angle: 10deg;
   $hero-image: '';
 
-  @include background(url($hero-image), linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), no-repeat $hero-background-top scroll);
   background-color: #324766;
   background-position: top;
   background-repeat: no-repeat;
@@ -19,7 +18,7 @@
   padding-bottom: 3em;
 
   .hero-logo img {
-    height: 4em;
+    height: 11em;
     margin-bottom: 1em;
   }
 
