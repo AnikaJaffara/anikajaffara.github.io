@@ -303,7 +303,7 @@ select {
 
 .CornerLogo {
 	@include span-columns(1);
-	@include shift(12);
+	@include shift(11);
 	margin-top: -2em;
 	margin-bottom: -11em;
 }
@@ -320,17 +320,17 @@ select {
 }
 
 .RSec2 {
-	@include pad(7em 1em);
+	@include pad(4em 1em);
 	text-align: center;
 }
 
 .RSec3 {
-	@include pad(7em 1em);
+	@include pad(4em 1em);
 	text-align: center;
 }
 
 .RSec4 {
-	@include pad(7em 1em);
+	@include pad(4em 1em);
 	text-align: center;
 }
  
