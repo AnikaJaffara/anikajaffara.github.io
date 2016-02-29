@@ -37,8 +37,8 @@ $('#fullpage').fullpage({
   sectionSelector: '.vertical-scrolling',
   slideSelector: '.horizontal-scrolling',
   navigation: false,
-  slidesNavigation: false,
-  controlArrows: true,
+  slidesNavigation: true,
+  controlArrows: false,
   anchors: ['firstSection', 'secondSection', 'thirdSection', 'fourthSection', 'fifthSection'],
   menu: '#menu',
 
@@ -76,7 +76,7 @@ $('#fullpage').fullpage({
 
   onSlideLeave: function( anchorLink, index, slideIndex, direction) {
     if(anchorLink == 'fifthSection' && slideIndex == 1) {
-      $.fn.fullpage.setAllowScrolling(true, 'up');
+      $.fn.fullpage.setAllowScrolling(false, 'up');
       $header_top.css('background', 'rgba(0, 47, 77, .3)');
       $nav.css('background', 'rgba(0, 47, 77, .25)');
     }

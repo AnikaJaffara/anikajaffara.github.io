@@ -8,11 +8,12 @@
 @import "layout";
 
 
+
 ///*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //HEADER
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 .Header {
-	background: $blue2;
+	background-color: $blue2;
 	background-size: cover;
 	background-repeat: no-repeat;
 	text-align: center;
@@ -38,7 +39,7 @@
   background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png");
   background-position: top;
   background-size: cover;
-  background-color: beige;
+  background-color: white;
   border: 1px solid $base-border-color;
   cursor: pointer;
   height: $hover-tile-height;
@@ -94,6 +95,41 @@
 	}
 }
 
+.Frame {
+	@include span-columns(10);
+	@include shift(1);
+	@include pad(2.4em 0 0 0);
+	width: 74em;
+	height: 40em;
+	border: 4px solid $red1;
+  border-radius: 10px;
+}
+
+.Slide {
+	@include span-columns(8);
+	@include shift(2);
+	box-shadow: 7px 7px 7px rgba(117,117,117, .7);
+	border-radius: 7px;
+}
+	
+.SlideButton, {
+	@include span-columns(12);
+	text-align: center;
+	margin-top: 4em;
+}
+
+.SButton {
+	@include pad(.7em 3.5em);
+	color: white;
+	font-weight: 700;
+	text-decoration: none;
+	font-size: 1.2rem;	
+	background-color: $green1;
+	border: none;
+	cursor: pointer;
+	border-radius: 4px;
+	box-shadow: 0 8px 16px -8px rgba(0, 0, 0, .8);
+}
 
 ///*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //POSTS
@@ -113,15 +149,15 @@
 .PostContent {
 	h1{
 		font-size: 1.5em;
-		color: #57AD68;
+		color: $green1;
 		text-decoration: none;
 		font-weight: 600;
 	}
 	a {
 		text-decoration: none;
 //		&:hover {color: blue;} 
-//		&:active {color: #458C53;} 
-		&:visited {color: #458C53;} 
+//		&:active {color: $green1;} 
+		&:visited {color: $green2;} 
 	}	
 	p {
 		line-height: 1.7em;
@@ -259,25 +295,58 @@ select {
 //CV
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 .CVHeader {
-	background: $blue2;
-	height: 25%;
+	background-color: $blue2;
+	height: 20%;
 	background-repeat: no-repeat;
+	margin: 0;
+}
+
+.CornerLogo {
+	@include span-columns(1);
+	@include shift(12);
+	margin-top: -2em;
+	margin-bottom: -11em;
+}
+
+.CV {
+	@include span-columns(6);
+	@include shift(3);
+	background-color: #ffffff;
+}
+
+.RSec1 {
+	@include pad(7em 1em);
 	text-align: center;
 }
 
-.RSec1,
-.RSec2, 
-.RSec3, 
+.RSec2 {
+	@include pad(7em 1em);
+	text-align: center;
+}
+
+.RSec3 {
+	@include pad(7em 1em);
+	text-align: center;
+}
+
 .RSec4 {
+	@include pad(7em 1em);
+	text-align: center;
+}
+ 
+.RSec5 {
+	@include pad(7em 1em);
 	text-align: center;
 }
 
-.ResumeTop {
-	@include pad(1em 0 4em 0);
+.RSec6 {
+	@include pad(7em 1em);
+	text-align: center;
 }
 
-.ResumeBottom {
-	@include pad(1em 0 4em 0);
+.PButton {
+	text-align: center;
+	margin-top: 7em;
 }
 
 .CVButton {
@@ -287,15 +356,16 @@ select {
 	text-decoration: none;
 	font-size: 1.2rem;	
 	background-color: $green1;
-//	box-shadow: 0 8px 16px -8px rgba(0, 0, 0, .8);
 	border: none;
 	cursor: pointer;
 	border-radius: 4px;
+	box-shadow: 0 8px 16px -8px rgba(0, 0, 0, .8);
 }
 
-.PButton {
-	margin-top: 2em;
+.CVFooter {
+	background-color: $blue2;
 }
+
 
 
 

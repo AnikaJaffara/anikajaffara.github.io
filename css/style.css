@@ -629,20 +629,25 @@ BREAKPOINTS
   -moz-osx-font-smoothing: grayscale; }
 
 .triangle {
-  display: inline-block; }
+  display: inline-block;
+  color: #F35460; }
 
 .triangle:after {
   font-size: .75em;
   display: block;
-  color: black;
+  color: #F35460;
   -webkit-transition: color .3s;
   transition: color .3s; }
 
 .triangle:hover:after {
-  color: #73B7F2; }
+  color: #73B7F2;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%); }
 
 .scroll-icon {
   position: absolute;
+  color: #F35460;
   left: 50%;
   bottom: 60px;
   padding: 0 10px;
@@ -682,20 +687,24 @@ BREAKPOINTS
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
   background: white;
-  width: 8px;
-  height: 8px;
-  margin: -4px 0 0 -4px; }
+  width: 20px;
+  height: 20px; }
 
 #fp-nav ul li a.active span,
-.fp-slidesNav ul li a.active span,
-#fp-nav ul li:hover a.active span,
-.fp-slidesNav ul li:hover a.active span {
-  width: 16px;
-  height: 16px;
-  margin: -8px 0 0 -8px;
+.fp-slidesNav ul li a.active span {
+  width: 20px;
+  height: 20px;
   background: transparent;
   box-sizing: border-box;
-  border: 1px solid #24221F; }
+  border: 10px solid #F35460; }
+
+#fp-nav ul li:hover a.active span,
+.fp-slidesNav ul li:hover a.active span {
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  box-sizing: border-box;
+  border: 10px solid #F35460; }
 
 /* MQ STYLES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -725,7 +734,7 @@ BREAKPOINTS
   nav li a {
     padding: 3px; } }
 .Header {
-  background: #73B7F2;
+  background-color: #73B7F2;
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center; }
@@ -743,7 +752,7 @@ BREAKPOINTS
   background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png");
   background-position: top;
   background-size: cover;
-  background-color: beige;
+  background-color: white;
   border: 1px solid gainsboro;
   cursor: pointer;
   height: 10em;
@@ -787,6 +796,53 @@ BREAKPOINTS
   .More .Triangle {
     text-align: center; }
 
+.Frame {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 82.94039%;
+  margin-left: 8.5298%;
+  padding: 2.4em 0 0 0;
+  width: 74em;
+  height: 40em;
+  border: 4px solid #F35460;
+  border-radius: 10px; }
+  .Frame:last-child {
+    margin-right: 0; }
+
+.Slide {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%;
+  margin-left: 17.05961%;
+  box-shadow: 7px 7px 7px rgba(117, 117, 117, 0.7);
+  border-radius: 7px; }
+  .Slide:last-child {
+    margin-right: 0; }
+
+.SlideButton {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  text-align: center;
+  margin-top: 4em; }
+  .SlideButton:last-child {
+    margin-right: 0; }
+
+.SButton {
+  padding: 0.7em 3.5em;
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1.2rem;
+  background-color: #23B17E;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.8); }
+
 .BlogPosts {
   max-width: 68em;
   margin-left: auto;
@@ -808,13 +864,13 @@ BREAKPOINTS
 
 .PostContent h1 {
   font-size: 1.5em;
-  color: #57AD68;
+  color: #23B17E;
   text-decoration: none;
   font-weight: 600; }
 .PostContent a {
   text-decoration: none; }
   .PostContent a:visited {
-    color: #458C53; }
+    color: #14A36F; }
 .PostContent p {
   line-height: 1.7em;
   color: #5e5e5e; }
@@ -920,22 +976,59 @@ select {
     font-size: .75em; }
 
 .CVHeader {
-  background: #73B7F2;
-  height: 25%;
+  background-color: #73B7F2;
+  height: 20%;
   background-repeat: no-repeat;
+  margin: 0; }
+
+.CornerLogo {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 6.17215%;
+  margin-left: 102.35765%;
+  margin-top: -2em;
+  margin-bottom: -11em; }
+  .CornerLogo:last-child {
+    margin-right: 0; }
+
+.CV {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  margin-left: 25.58941%;
+  background-color: #ffffff; }
+  .CV:last-child {
+    margin-right: 0; }
+
+.RSec1 {
+  padding: 7em 1em;
   text-align: center; }
 
-.RSec1,
-.RSec2,
-.RSec3,
+.RSec2 {
+  padding: 7em 1em;
+  text-align: center; }
+
+.RSec3 {
+  padding: 7em 1em;
+  text-align: center; }
+
 .RSec4 {
+  padding: 7em 1em;
   text-align: center; }
 
-.ResumeTop {
-  padding: 1em 0 4em 0; }
+.RSec5 {
+  padding: 7em 1em;
+  text-align: center; }
 
-.ResumeBottom {
-  padding: 1em 0 4em 0; }
+.RSec6 {
+  padding: 7em 1em;
+  text-align: center; }
+
+.PButton {
+  text-align: center;
+  margin-top: 7em; }
 
 .CVButton {
   padding: 0.7em 3.5em;
@@ -946,9 +1039,10 @@ select {
   background-color: #23B17E;
   border: none;
   cursor: pointer;
-  border-radius: 4px; }
+  border-radius: 4px;
+  box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.8); }
 
-.PButton {
-  margin-top: 2em; }
+.CVFooter {
+  background-color: #73B7F2; }
 
 /*# sourceMappingURL=style.css.map */
