@@ -22,7 +22,7 @@
 
 .Triangle {
 	@include triangle (3em, $blue6, down);
-	&:hover {color: $blue6;} 
+	&:hover {color: $blue6;}
 }
 
 
@@ -44,7 +44,7 @@
   cursor: pointer;
   height: $hover-tile-height;
   margin-bottom: $base-line-height;
-  
+
   @include media($medium-screen) {
     width: 40%;
   }
@@ -101,8 +101,8 @@
 	@include pad(2.4em 0 0 0);
 	width: 74em;
 	height: 40em;
-	border-top: 4px solid $red1;
-	border-bottom: 4px solid $red1;
+	// border-top: 4px solid $red1;
+	// border-bottom: 4px solid $red1;
 }
 
 .Slide {
@@ -111,7 +111,7 @@
 	box-shadow: 7px 7px 7px rgba(117,117,117, .7);
 	border-radius: 7px;
 }
-	
+
 .SlideButton, {
 	@include span-columns(12);
 	text-align: center;
@@ -123,7 +123,7 @@
 	color: white;
 	font-weight: 700;
 	text-decoration: none;
-	font-size: 1.2rem;	
+	font-size: 1.2rem;
 	background-color: $green1;
 	border: none;
 	cursor: pointer;
@@ -155,10 +155,10 @@
 	}
 	a {
 		text-decoration: none;
-//		&:hover {color: blue;} 
-//		&:active {color: $green1;} 
-		&:visited {color: $green2;} 
-	}	
+//		&:hover {color: blue;}
+//		&:active {color: $green1;}
+		&:visited {color: $green2;}
+	}
 	p {
 		line-height: 1.7em;
 		color: shade($grey1, 20%);
@@ -189,7 +189,7 @@
 
 .SocialLinks {
 }
-	
+
 .Social {
 	@include span-columns(10);
 	@include shift(1);
@@ -204,7 +204,7 @@
 			font-size: 4em;
 			color: $blue6;
 			&:hover {color: $blue5;}
-			
+
 			@include media($notebook) {
 				@include pad(.4em);
 				font-size: 3.6em;
@@ -229,7 +229,7 @@
 		display: none;
 	}
 }
-	
+
 @include media($mobile) {
 	li:nth-child(1) {
 		display: none;
@@ -267,12 +267,12 @@ select {
   box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
   margin-bottom: 30px;
 }
-	
+
 .Button {
 	@include pad(.7em 3.5em);
 	color: white;
 	font-weight: 700;
-	font-size: 1.2rem;	
+	font-size: 1.2rem;
 	background-color: $green1;
 //	box-shadow: 0 8px 16px -8px rgba(0, 0, 0, .8);
 	border: none;
@@ -333,7 +333,7 @@ select {
 	@include pad(4em 1em);
 	text-align: center;
 }
- 
+
 .RSec5 {
 	@include pad(7em 1em);
 	text-align: center;
@@ -354,7 +354,7 @@ select {
 	color: white;
 	font-weight: 700;
 	text-decoration: none;
-	font-size: 1.2rem;	
+	font-size: 1.2rem;
 	background-color: $green1;
 	border: none;
 	cursor: pointer;
@@ -365,7 +365,3 @@ select {
 .CVFooter {
 	background-color: $blue2;
 }
-
-
-
-
