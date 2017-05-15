@@ -375,7 +375,7 @@ header {
 .call-to-action h2 {
   margin: 0 auto 20px; }
 
-.FooterImg {
+.Footer {
   position: relative;
   width: 100%;
   min-height: auto;
@@ -428,10 +428,11 @@ header {
   text-decoration: none;
   color: #FFFFFF; }
   .Foot a:hover, .Foot a:focus {
-    color: #006BD9;
+    color: #73B7F2;
     text-decoration: none; }
 .Foot h3 {
-  font-weight: 900; }
+  font-weight: 900;
+  font-size: 1.5em; }
 
 .no-gutter > [class*='col-'] {
   padding-right: 0;
