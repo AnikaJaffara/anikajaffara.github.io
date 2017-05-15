@@ -1,0 +1,12 @@
+# Site settings
+title: CW Home Buyers
+email: hey@anikajaffara.com
+description: > # this means to ignore newlines until "baseurl:"
+baseurl: "/anikajaffara" # the subpath of your site, e.g. /blog/
+url: https:/anikajaffara.com
+
+# Build settings
+markdown: kramdown
+
+
+port: 8000
