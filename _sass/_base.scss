@@ -347,13 +347,16 @@ header {
     text-align: right;
     text-shadow: 3px 3px 3px $theme-blue;
     @media (max-width: 730px) {
-      font-size: 3.3em;
+      font-size: 3em;
     }
   }
   h2 {
     font-size: 2.3em;
     font-weight: 200;
     text-shadow: 3px 3px 3px $theme-blue;
+    @media (max-width: 730px) {
+      font-size: 1.5em;
+    }
   }
 }
 

@@ -303,11 +303,14 @@ header {
     text-shadow: 3px 3px 3px #006BD9; }
     @media (max-width: 730px) {
       .Tag h1 {
-        font-size: 3.3em; } }
+        font-size: 3em; } }
   .Tag h2 {
     font-size: 2.3em;
     font-weight: 200;
     text-shadow: 3px 3px 3px #006BD9; }
+    @media (max-width: 730px) {
+      .Tag h2 {
+        font-size: 1.5em; } }
 
 .Slider {
   padding: 3em 0em 3em 0em; }
